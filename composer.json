@@ -1,0 +1,40 @@
+{
+    "name": "mahmoud/test_laravel",
+    "type": "library",
+    "authors": [
+        {
+            "name": "mahmoud mhamed",
+            "email": "mahmoud-mhamed@github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Devdojo\\Calculator\\": "packages/devdojo/calculator/src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "mahmoud-mhamed/test_package",
+                "version": "dev-master",
+                "source": {
+                    "url": "git://github.com/mahmoud-mhamed/test_package.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "psr-0" : {
+                        "Weaverryan\\DangerZone" : "src"
+                    }
+                }
+            }
+        }
+    ]
+}
